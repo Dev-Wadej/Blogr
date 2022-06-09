@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Overpass, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.row {
+    margin-right: 10%;
+}
+
+.header {
+    height: 70vh;
+    background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-right: 8rem;
+    border-bottom-left-radius: 5rem;
+}
+
+li a,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+}
+
+.header__logo {
+    padding-left: 7rem;
+}
+
+.header__nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 100vh;
+}
+
+.nav__list {
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-signup {
+    color: hsl(353, 100%, 62%);
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.7rem 1.2rem;
+    margin-left: 2rem;
+    transition: all 0.3s;
+}
+
+.cta-signup:hover {
+    background: rgba(255, 255, 255, 0.209);
+    color: #fff;
+}
+
+.header__main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    color: #fff;
+}
+
+.header__title {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.header__sub {
+    color: hsl(240, 2%, 79%);
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.header__cta {
+    margin-top: 2rem;
+}
+
+.cta-learn {
+    margin-left: 2rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 0.7rem 1.2rem;
+    transition: all 0.3s;
+}
+
+.cta-learn:hover {
+    background-color: #fff;
+    color: hsl(353, 100%, 62%);
+}
+
+.main__header {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.main__design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    color: inherit;
+    row-gap: 2rem;
+}
+
+.leftbtm__design {
+    grid-row: 2/3;
+    width: 80%;
+    margin-left: 7rem;
+}
+
+.lefttop__design {
+    margin-left: 7rem;
+    width: 80%;
+}
+
+.leftbtm__design h3,
+.lefttop__design h3 {
+    font-weight: 300;
+    color: hsl(208, 49%, 24%);
+    padding: 1.5rem 0;
+    font-weight: 600;
+}
+
+.leftbtm__design p,
+.lefttop__design p {
+    color: hsl(207, 13%, 34%);
+    font-size: 16px;
+    line-height: 1.7rem;
+    word-spacing: 0.1rem;
+}
+
+.right__design {
+    position: relative;
+}
+
+.right__design img {
+    width: 100%;
+    position: absolute;
+    left: 25%;
+    top: -68%;
+}
+
+.infrastructure {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient( to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    height: 27rem;
+    margin-top: 13rem;
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+}
+
+.inf__text {
+    align-self: center;
+    width: 40rem;
+}
+
+.inf__text h3 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.4rem;
+}
+
+.inf__text p {
+    color: hsl(240, 2%, 79%);
+    line-height: 1.6rem;
+    font-weight: lighter;
+    width: 80%;
+}
+
+.inf__phone img {
+    display: inline-block;
+    margin-top: -4rem;
+    margin-left: 5rem;
+}
+
+.infLaptop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    position: relative;
+    row-gap: 4rem;
+    column-gap: 7rem;
+}
+
+.leftbtm__laptop,
+.left__toplaptop {
+    grid-column: 2/3;
+    width: 70%;
+}
+
+.left__toplaptop {
+    margin-top: 15rem;
+}
+
+.left__toplaptop h3,
+.leftbtm__laptop h3 {
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+
+.left__toplaptop p,
+.leftbtm__laptop p {
+    color: hsl(207, 13%, 34%);
+    line-height: 1.8rem;
+    font-size: 15px;
+}
+
+.right__laptop {
+    position: absolute;
+    top: 18%;
+    left: -15%;
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    margin-top: 23rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 7rem 0;
+    border-top-right-radius: 7rem;
+}
+
+.company--list li a,
+.connect--list li a,
+.product--list li a {
+    color: hsl(240, 2%, 79%);
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.company--list li a:hover,
+.connect--list li a:hover,
+.product--list li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.company--list li,
+.connect--list li,
+.product--list li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    margin-bottom: 2.3rem;
+}
+
+
+/*** Header DropDown *****/
+
+.dropdown__menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 3rem;
+    padding: 1.3rem 2rem;
+    z-index: 200;
+    transition: all 0.2s;
+}
+
+.nav__list {
+    height: 5rem;
+}
+
+.nav__list--1 a {
+    transition: all 2s;
+}
+
+.nav__list--1:hover .dropdown__menu {
+    display: block;
+    color: hsl(208, 49%, 24%);
+}
+
+
+/**** Mobile View****/
+
+@media (max-width: 500px) {
+    .header {}
+    .header__title {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .cta--btn,
+    .header__nav {
+        display: none;
+    }
+    .header__main {
+        width: 100%;
+        top: 40%;
+    }
+    .main__header {
+        margin: 7rem auto 3rem;
+    }
+    .main__design {
+        grid-template-columns: none;
+    }
+    .lefttop__design,
+    .leftbtm__design {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .right__design img {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .right__design {
+        grid-row: 1;
+    }
+    .leftbtm__design h3,
+    .lefttop__design h3 {
+        font-size: 2rem;
+    }
+    .inf__phone img {
+        margin-top: -25rem;
+        margin-left: 0rem;
+    }
+    .infrastructure {
+        flex-direction: column;
+        margin-top: 15rem;
+        padding: 27rem 0 20rem;
+        gap: 5rem;
+    }
+    .inf__phone img {
+        width: 95%;
+    }
+    .inf__text {
+        width: 95%;
+        text-align: center;
+    }
+    .inf__text p {
+        width: 100%;
+    }
+    .infLaptop {
+        grid-template-columns: none;
+    }
+    .right__laptop img {
+        width: 100%;
+    }
+    .right__laptop {
+        position: relative;
+        left: 5%;
+    }
+    .leftbtm__laptop,
+    .left__toplaptop {
+        grid-column: 1;
+        width: 100%;
+        text-align: center;
+    }
+    .left__toplaptop {
+        margin-top: 5rem;
+    }
+    footer {
+        margin-top: 5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo__img {
+        margin-bottom: 3rem;
+    }
+    .product,
+    .company {
+        margin-bottom: 4rem;
+    }
+}
